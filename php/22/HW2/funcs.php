@@ -18,3 +18,7 @@ function array_mess($messages) {
 function print_arr($arr) {
   echo '<pre>' . print_r($arr, true) . '<pre>';
 }
+
+function get_format_message($message) {
+  return explode('|', $message);
+}

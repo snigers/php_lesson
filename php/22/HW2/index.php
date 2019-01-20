@@ -12,7 +12,7 @@
 
   $messages = get_mess();
   $messages = array_mess($messages);
-  print_arr($messages);
+  // print_arr($messages);
 
 
 ?>
@@ -25,6 +25,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    .message {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
   
@@ -45,13 +52,17 @@
   <?php
     if (!empty($messages)) {
       foreach ($messages as $message) {
-        echo '<div'
+        $message = get_format_message($message);
+        // print_arr($message);
+        echo '<div class="message">';
+          echo "<p>Автор: $message[0]| Дата: $message[2]</p>";
+          echo "<div>" . nl2br(htmlspecialchars($message[1])) . "</div>";
+        echo '</div>';
       }
     }
-
-
-
   ?>
+
+
 
 
 </body>

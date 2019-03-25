@@ -11,4 +11,4 @@ class Car
   public $path = __DIR__ . '/test';
   public $test = 1 + 2;
 
-}
+} 

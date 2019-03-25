@@ -28,4 +28,4 @@ echo "<h3>О моем Авто</h3>
 Цвет: {$car1->color}<br>
 Кол-во колес: {$car1->wheels}<br>
 Год выпуска: {$car1->year}<br>
-Скорость: {$car1->speed}<br>"; 
+Скорость: {$car1->speed}<br>";

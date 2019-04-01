@@ -22,7 +22,7 @@ echo $car2->getCarInfo();
 echo $car1->getPrototypeInfo();
 echo $car1::TEST_CAR_SPEED;
 
-// Переменная class в ней имя класса, пока не нужно, но полезна при применение пространства имен.
+// Переменная class в ней имя класса, пока не нужно, но полезна при применение пространства имен    
 echo Car::class;
 
 $car1->getLorem();
